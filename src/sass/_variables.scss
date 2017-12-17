@@ -1,0 +1,120 @@
+// Functions
+// ==========================================================================
+@function theme-color($key: "primary") {
+  @return map-get($theme-colors, $key);
+}
+
+// Colors
+// ==========================================================================
+$blue: #002642;
+$pink: #f76285;
+$yellow: #ceff1a;
+$cyan: #32fff1;
+$white: #ffffff;
+$black: #000000;
+
+$theme-colors: (
+  "primary": $pink,
+  "secondary": $yellow,
+  "info": $cyan,
+  "blue": $blue,
+  "light": #fffaef
+);
+
+// Body
+// ==========================================================================
+$body-bg: theme-color("blue");
+$body-color: theme-color("primary");
+
+// Options
+// ==========================================================================
+$enable-gradients: true;
+
+// FONTS
+// ==========================================================================
+$font-family-base: "jaf-domus", sans-serif;
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 2.5;   /* 40 */
+$h2-font-size: $font-size-base * 2;     /* 32 */
+$h3-font-size: $font-size-base * 1.75;  /* 28 */
+$h4-font-size: $font-size-base * 1.5;   /* 24 */
+$h5-font-size: $font-size-base * 1.25;  /* 20 */
+$h6-font-size: $font-size-base;         /* 16 */
+
+$display1-size: 6rem !default;
+$display2-size: 5.5rem !default;
+$display3-size: 4.5rem !default;
+$display4-size: 3.5rem !default;
+
+// Paragraph
+// ==========================================================================
+$paragraph-margin-bottom: 1rem !default;
+
+// Links
+// ==========================================================================
+$link-color: theme-color("primary");
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+// Border-radius
+// ==========================================================================
+$border-radius: 0.875rem;
+$border-radius-lg: 1rem;
+$border-radius-sm: 0.5rem;
+
+// Buttons
+// ==========================================================================
+$input-btn-padding-y-sm: 0.25rem;
+$input-btn-padding-x-sm: 0.5rem;
+
+$input-btn-padding-y: 1.25rem;
+$input-btn-padding-x: 3rem;
+
+$input-btn-padding-y-lg: 1.5rem;
+$input-btn-padding-x-lg: 3rem;
+$input-btn-focus-color: rgba(theme-color("info"), .25) !default;
+
+// Input
+// ==========================================================================
+$input-bg: rgba($black, 0.3);
+$input-disabled-bg: rgba($black, 0.1);
+
+$input-color: theme-color("info");
+$input-border-color: rgba(theme-color("info"), 0.4);
+$input-focus-border-color: theme-color("info");
+
+$input-placeholder-color: rgba(theme-color("info"), 0.4);
+
+// PX to REM MEASURAMENTS
+// ==========================================================================
+/* 
+8px = 0.5rem
+9px = 0.5625rem
+10px = 0.625rem
+11px = 0.6875rem
+12px = 0.75rem
+13px = 0.8125rem
+14px = 0.875rem
+15px = 0.9375rem
+16px = 1rem (base)
+18px = 1.125rem
+20px = 1.25rem
+22px = 1.375rem
+24px = 1.5rem
+26px = 1.625rem
+28px = 1.75rem
+30px = 1.875rem
+32px = 2rem
+34px = 2.125rem
+36px = 2.25rem
+38px = 2.375rem
+40px = 2.5rem
+48px = 3rem
+56px = 3.5rem
+64px = 4rem
+72px = 4.5rem
+80px = 5rem
+88px = 5.5rem
+*/

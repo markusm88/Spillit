@@ -1,0 +1,165 @@
+// Imports */
+// ==========================================================================
+
+// Font (Todo: change link to shortcut subscription)
+@import url("https://use.typekit.net/rrr0ogz.css");
+
+// Local
+@import "./variables";
+@import "./mixins";
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Body
+// ==========================================================================
+.pink-gradient {
+  height: 100%;
+  background: linear-gradient(158deg, #002642 50%, #ab445c 100%) fixed;
+  /* background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed; */
+}
+
+// Navbar
+// ==========================================================================
+.navbar {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-bottom: 3.5rem;
+}
+
+// Elements
+// ==========================================================================
+.container {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+hr.hr-primary {
+  margin: 2.5rem 0 3rem;
+  border-top: 1px solid rgba(theme-color-level(primary), 0.2);
+}
+
+// Links
+// ==========================================================================
+a:hover {
+  text-decoration: none;
+}
+
+// Inputs
+// ==========================================================================
+.input-group .form-control {
+  margin-bottom: 24px;
+}
+
+.input-group-sm > .form-control {
+  padding: 0.5rem 1rem;
+}
+
+// Buttons
+// ==========================================================================
+.btn {
+  margin-bottom: 1.5rem;
+  h4 {
+    margin-bottom: 0;
+  }
+}
+
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-info {
+  border-width: 2px;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-info:hover {
+  color: $black;
+}
+
+.btn-primary:hover {
+  background: theme-color-level(primary, 4);
+}
+
+.btn-secondary:hover {
+  background: theme-color-level(secondary, 4);
+}
+
+.btn-info:hover {
+  background: theme-color-level(info, 4);
+}
+
+// Icons
+// ==========================================================================
+.material-icons {
+  vertical-align: middle !important;
+  padding-bottom: 3px;
+}
+
+// Rules for sizing the icon
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+// Rules for using icons as black on a light background
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+// Rules for using icons as white on a dark background
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* TODOs */
+// ==========================================================================
+// Delete this -- Only for bottom nav for now
+.pink-gradient {
+  margin-bottom: 80px;
+}
+.fixed-bottom {
+  height: 56px;
+  padding-top: 10px;
+  background-color: rgba(104, 56, 82, 0.4);
+}
+
+// TODO: Use variables from btn class. Extend class
+.box-outline-info {
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 1.25rem 3rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.875rem;
+  color: #32fff1;
+  background-color: transparent;
+  background-image: none;
+  border-color: #32fff1;
+}
